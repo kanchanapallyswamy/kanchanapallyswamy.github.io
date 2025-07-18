@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KVR Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#profiles">Coding Profiles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <img src="assets/profile.jpg" alt="Profile" class="hero-img" />
+      <h1>K. Veera Raghava Swamy</h1>
+      <p>Solving problems with Java, Python, C |</p>
+      <a href="assets/KVR_Resume___.pdf" download class="btn">Download Resume</a>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>Personal Bio</h2>
+    <p>I'm a B.Tech student from Sreenidhi Institute of Science and Technology, majoring in Information Technology. I'm driven by a deep curiosity for system efficiency and love building performance-focused projects using Java, C, and Python.</p>
+    <p>My passion lies in mastering Data Structures & Algorithms, which I believe are the foundation for creating efficient and scalable software solutions. I enjoy solving complex problems and continuously challenging myself through coding platforms like LeetCode and CodeChef.</p>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech, Information Technology</strong> - Sreenidhi Institute of Science and Technology (2022–2026) - CGPA: 9.0/10</li>
+      <li><strong>Intermediate</strong> - Pranava Junior College (2020–2022) - 97.9%</li>
+      <li><strong>Secondary School</strong> - KPR Gowtham School - GPA: 10/10</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Programming Languages</h3>
+    <p>C, Java, Python, SQL</p>
+    <h3>Web Technologies</h3>
+    <p>HTML, CSS</p>
+    <h3>Tools & Databases</h3>
+    <p>MySQL, GitHub</p>
+    <h3>DSA Knowledge</h3>
+    <p>Arrays & Strings, Linked Lists, Stacks & Queues, Trees & Graphs, Hash Tables, Heaps, Dynamic Programming, Greedy Algorithms, Sieve’s Algorithm, Sorting Algorithms</p>
+    <h3>LeetCode Stats</h3>
+    <ul>
+      <li>LeetCode Problems: 600+</li>
+      <li>Coding Contests: 35+</li>
+      <li>Longest Streak: 53+</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>🔁 LRU Cache</h3>
+      <p>O(1) get/put operations using HashMap + Doubly Linked List. Built in Java.</p>
+      <a href="http://lru-cache-kvr.streamlit.app" class="btn">Live Demo</a>
+      <a href="https://github.com/kanchanapallyswamy" class="btn">GitHub</a>
+    </div>
+    <div class="project">
+      <h3>📊 Real-Time Median Finder</h3>
+      <p>Live median tracker using Min/Max Heaps and responsive UI built with HTML, CSS & JS.</p>
+      <a href="http://medianfinder-kvr.streamlit.app" class="btn">Live Demo</a>
+      <a href="https://github.com/kanchanapallyswamy" class="btn">GitHub</a>
+    </div>
+  </section>
+
+  <section id="profiles">
+    <h2>Coding Profiles</h2>
+    <ul>
+      <li><a href="https://leetcode.com/kvr_swamy">LeetCode</a></li>
+      <li><a href="https://www.codechef.com/users/kvr_swamy">CodeChef</a></li>
+      <li><a href="https://github.com/kanchanapallyswamy">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/swamy-kanchanapally">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: kanchanapallyswamy@gmail.com</p>
+    <p>Phone: +91 9640074089</p>
+  </section>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
